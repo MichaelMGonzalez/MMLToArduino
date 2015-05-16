@@ -11,7 +11,16 @@ namespace MMLToArduino
         protected int noteLength;
         protected uint msLength;
         protected bool isDotted;
-
+        public enum Type
+        {
+            Note,
+            Rest
+        }
+        public abstract Type GetType();
+        public uint GetMSLength()
+        {
+            return msLength;
+        }
         public uint CalculateNoteDuration(int tempo)
         {
             double normalizedMS = ((double)1 / noteLength) * 4;

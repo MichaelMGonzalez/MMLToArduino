@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MakeArduinoCode.cs" />
     <Compile Include="MusicalElement.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Parser.cs" />

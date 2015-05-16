@@ -44,8 +44,6 @@ namespace MMLToArduino
             {
                 ScanMML();
             }
-            Console.WriteLine(AreBoundsValid());
-            Console.WriteLine(index);
         }
         private void ScanMML()
         {

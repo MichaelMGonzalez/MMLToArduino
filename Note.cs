@@ -71,9 +71,12 @@ namespace MMLToArduino
             if (isFlat)
                 freq--;
             freq = (440 * Math.Pow(a, freq));
-            Console.Write(freq + " ");
             frequency = (uint)Math.Floor(freq);
             return (uint)freq;
+        }
+        public uint GetFrequency()
+        {
+            return frequency;
         }
         private void SetupDistanceFromA()
         {
@@ -85,6 +88,10 @@ namespace MMLToArduino
             distanceFromA.Add('e', 7);
             distanceFromA.Add('f', 8);
             distanceFromA.Add('g', 10);
+        }
+        public override Type GetType()
+        {
+            return Type.Note;
         }
     }
 }

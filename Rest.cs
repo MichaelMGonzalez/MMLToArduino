@@ -23,5 +23,9 @@ namespace MMLToArduino
             retVal += "\n";
             return retVal;
         }
+        public override MusicalElement.Type GetType()
+        {
+            return Type.Rest;
+        }
     }
 }
