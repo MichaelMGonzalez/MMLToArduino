@@ -16,8 +16,10 @@ namespace MMLToArduino
         {
             string retVal = "(Rest Note)";
             retVal += " Note Length: " + noteLength.ToString();
+            if (isDotted)
+                retVal += "+DOT";
             if (msLength > 0)
-                retVal += " MiliSecond Length: " + msLength.ToString();
+                retVal += " MilliSecond Length: " + msLength.ToString();
             retVal += "\n";
             return retVal;
         }

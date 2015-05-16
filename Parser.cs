@@ -14,6 +14,7 @@ namespace MMLToArduino
         const string OCTAVEMODIFERS = "<>o";
         const string SHARPSANDFLATS = "+-#";
         const char REST = 'r';
+        const char DOT = '.';
         const char TEMPOMODIFIER = 't';
         const char CHANGEDEFAULTLENGTH = 'l';
 
@@ -140,8 +141,10 @@ namespace MMLToArduino
             {
                 index++;
                 int noteLength = FindInteger();
+                bool isDotted = IsDotted();
                 retVal = new Rest(noteLength);
                 retVal.CalculateNoteDuration(tempo);
+                retVal.SetIsDotted(isDotted);
             }
             return retVal;
         }
@@ -160,6 +163,7 @@ namespace MMLToArduino
                 index++;
                 Note.Semitone accidental = IsAccidental();
                 int noteLength = FindInteger();
+                bool isDotted = IsDotted();
                 if (noteLength == -1)
                     noteLength = defaultNoteLength;
                 if( accidental == Note.Semitone.natural )
@@ -170,6 +174,7 @@ namespace MMLToArduino
                 {
                     retVal = new Note(note, octave, noteLength, accidental);
                 }
+                retVal.SetIsDotted(isDotted);
                 retVal.CalculateFrequency(a);
                 retVal.CalculateNoteDuration(tempo);
             }
@@ -204,6 +209,19 @@ namespace MMLToArduino
             else
                 return retVal;
             return retVal + ParseInteger();
+        }
+        private bool IsDotted()
+        {
+            bool retVal = false;
+            if (AreBoundsValid())
+            {
+                if (mml[index] == DOT)
+                {
+                    index++;
+                    retVal = true;
+                }
+            }
+            return retVal;
         }
         private Note.Semitone IsAccidental()
         {

@@ -51,9 +51,11 @@ namespace MMLToArduino
             if (isFlat)
                 retVal += "b";
             retVal += " Note Length: " + noteLength.ToString();
+            if (isDotted)
+                retVal += "+DOT";
             retVal += " Octave: " + octave.ToString();
             if( msLength > 0 )
-                retVal += " MiliSecond Length: " + msLength.ToString();
+                retVal += " MilliSecond Length: " + msLength.ToString();
             if( frequency > 0 )
                 retVal += " Frequency: " + frequency.ToString();
             retVal += "\n";
