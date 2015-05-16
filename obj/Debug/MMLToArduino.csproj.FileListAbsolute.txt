@@ -1,0 +1,6 @@
+C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\bin\Debug\MMLToArduino.exe.config
+C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\obj\Debug\MMLToArduino.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\bin\Debug\MMLToArduino.exe
+C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\bin\Debug\MMLToArduino.pdb
+C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\obj\Debug\MMLToArduino.exe
+C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\obj\Debug\MMLToArduino.pdb
