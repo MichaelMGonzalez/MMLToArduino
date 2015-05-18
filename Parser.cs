@@ -120,13 +120,13 @@ namespace MMLToArduino
                         break;
                     case '<':
                         octave--;
-                        if (octave < 3)
+                        if (octave < 2)
                             octave = 8;
                         break;
                     case '>':
                         octave++;
                         if (octave > 8)
-                            octave = 3;
+                            octave = 2;
                         break;
                 }
             }
@@ -139,6 +139,8 @@ namespace MMLToArduino
             {
                 index++;
                 int noteLength = FindInteger();
+                if (noteLength == -1)
+                    noteLength = defaultNoteLength;
                 bool isDotted = IsDotted();
                 retVal = new Rest(noteLength);
                 retVal.CalculateNoteDuration(tempo);

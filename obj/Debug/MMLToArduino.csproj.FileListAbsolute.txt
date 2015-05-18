@@ -4,3 +4,9 @@ C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\bin\Debug\MMLToArduino.ex
 C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\bin\Debug\MMLToArduino.pdb
 C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\obj\Debug\MMLToArduino.exe
 C:\Users\Michael\Programming\MMLToArduino\MMLToArduino\obj\Debug\MMLToArduino.pdb
+C:\Users\Rise\Programming\MMLToArduino\bin\Debug\MMLToArduino.exe.config
+C:\Users\Rise\Programming\MMLToArduino\obj\Debug\MMLToArduino.pdb
+C:\Users\Rise\Programming\MMLToArduino\bin\Debug\MMLToArduino.exe
+C:\Users\Rise\Programming\MMLToArduino\bin\Debug\MMLToArduino.pdb
+C:\Users\Rise\Programming\MMLToArduino\obj\Debug\MMLToArduino.csprojResolveAssemblyReference.cache
+C:\Users\Rise\Programming\MMLToArduino\obj\Debug\MMLToArduino.exe

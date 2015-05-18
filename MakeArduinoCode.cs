@@ -21,6 +21,10 @@ namespace MMLToArduino
         public void CreateVariable(string type, string name, string value)
         {
             dictionaryKeys.Add(name);
+            ChangeVariable(type, name, value);
+        }
+        public void ChangeVariable(string type, string name, string value)
+        {
             variables[name] = type + " " + name + " = " + value + ";";
             definedVariables[name] = true;
         }

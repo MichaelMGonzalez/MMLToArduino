@@ -70,7 +70,7 @@ namespace MMLToArduino
                 freq++;
             if (isFlat)
                 freq--;
-            freq = (440 * Math.Pow(a, freq));
+            freq = (523.3 * Math.Pow(a, freq));
             frequency = (uint)Math.Floor(freq);
             return (uint)freq;
         }
@@ -81,13 +81,13 @@ namespace MMLToArduino
         private void SetupDistanceFromA()
         {
             distanceFromA = new SortedDictionary<char, int>();
-            distanceFromA.Add('a', 0);
-            distanceFromA.Add('b', 2);
-            distanceFromA.Add('c', 3);
-            distanceFromA.Add('d', 5);
-            distanceFromA.Add('e', 7);
-            distanceFromA.Add('f', 8);
-            distanceFromA.Add('g', 10);
+            distanceFromA.Add('a', 9);
+            distanceFromA.Add('b', 11);
+            distanceFromA.Add('c', 0);
+            distanceFromA.Add('d', 2);
+            distanceFromA.Add('e', 4);
+            distanceFromA.Add('f', 5);
+            distanceFromA.Add('g', 7);
         }
         public override Type GetType()
         {
